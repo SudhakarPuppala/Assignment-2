@@ -1,0 +1,4 @@
+schema: '2.0'
+stages:
+  create_model:
+    cmd: python scripts/create_model.py
