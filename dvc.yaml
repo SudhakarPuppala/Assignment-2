@@ -1,15 +1,15 @@
 stages:
-  #create_model:
-  #  cmd: python scripts/create_model.py
-  #train:
-  #  cmd: python scripts/train_model.py
-  #  deps:
-  #    - PetImages/
-  #    - src/
-  #    - scripts/train_model.py
-  #  outs:
-  #    - models/model.pt
-  #  params: []
+  create_model:
+    cmd: python scripts/create_model.py
+  train:
+    cmd: python scripts/train_model.py
+    deps:
+      - PetImages/
+      - src/
+      - scripts/train_model.py
+    outs:
+      - models/model.pt
+    params: []
   evaluate:
     cmd: python scripts/evaluate_model.py
     deps:
@@ -33,5 +33,3 @@ plots:
         - val_recall
         - val_f1_score
       title: "Training Metrics"
-      xlabel: "Epoch"
-      ylabel: "Metric Value"
