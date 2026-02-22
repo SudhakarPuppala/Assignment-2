@@ -46,7 +46,6 @@ This project implements a complete end-to-end MLOps pipeline for a binary image 
 
 ### M4: CD Pipeline & Deployment ✅
 - **Kubernetes Deployment**: Complete manifests with HPA, Service, Deployment
-- **Docker Compose**: Alternative deployment for local/VM environments
 - **GitOps**: Automated deployment on main branch changes
 - **Smoke Tests**: Post-deployment health and functionality checks
 
